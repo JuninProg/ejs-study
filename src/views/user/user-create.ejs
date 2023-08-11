@@ -1,0 +1,21 @@
+<div class="h-100 m-4">
+  <div class="my-4">
+    <p class="fs-3">Create a new User</p>
+  </div>
+  <form name="users" method="post" action="/api/users">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="name" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
